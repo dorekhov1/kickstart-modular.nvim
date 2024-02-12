@@ -7,6 +7,7 @@ vim.o.hlsearch = false
 
 -- Make line numbers default
 vim.wo.number = true
+vim.wo.relativenumber = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
@@ -14,7 +15,7 @@ vim.o.mouse = 'a'
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
-vim.o.clipboard = 'unnamedplus'
+-- vim.o.clipboard = 'unnamedplus'
 
 -- Enable break indent
 vim.o.breakindent = true
@@ -38,5 +39,19 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+-- Make window scroll when the cursor is 8 lines away from edge
+vim.o.scrolloff = 8
+
+-- Number of spaces tab ist
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
+
+-- Replace tabs with spaces
+vim.o.expandtab = true
+
+-- Autoindent new lines
+vim.o.smartindent = true
 
 -- vim: ts=2 sts=2 sw=2 et
